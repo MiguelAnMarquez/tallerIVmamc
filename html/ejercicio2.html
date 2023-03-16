@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Formulario # 2</title>
+</head>
+<body>
+    <form>
+    <fieldset style="width: 500px;">
+        <legend>Personal Details</legend>
+        Saludation<br>
+        <select name="" id="">
+            <option>--None--</option>
+            <option>Mr</option>
+            <option>Mrs</option>
+            <option>Ms</option>
+        </select>
+        <br>
+        <br>
+        First name:&nbsp;<input type="text" name="FName" pattern="^(Mr|Ms|Mrs)\s{0,1}[a-zA-Z]+$" id="">
+        <br>
+        <br>
+        Last name:&nbsp;<input type="text" name="LName" pattern="^(Mr|Ms|Mrs)\s{0,3}[a-zA-Z]+$" id="">
+        <br>
+        <br>
+        Gender :<fieldset style="display: inline;border: 0px;vertical-align: -2px;padding-left: 0px;"><input type="radio" name="gender" id="male"> Male&nbsp;&nbsp;&nbsp;<input type="radio" name="gender" id="female"> Female </fieldset>
+        <br>
+        Email:&nbsp;<input type="email" name="Email" id="Email" pattern="^[a-zA-Z0-9._%+-]+@cecar\.edu\.co$" style="margin-top: 10px;">
+        <br>
+        <br>
+        Date of birth:&nbsp;<input type="date" name="DateOb" id="Dob">
+        <br>
+        <br>
+        <span>Adress:</span><br>
+        <textarea name="" id="" cols="30" rows="10" maxlength="100" style="height: 50px;"></textarea>
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

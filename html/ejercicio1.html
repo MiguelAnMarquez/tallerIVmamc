@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Formulario # 1</title>
+</head>
+<body>
+    <h2 style="color: red;">Land Of Boxes Order Form</h2>
+    <!-- First Part Of The Form -->
+    <form action="">  
+        <span style="margin-left: 19px;">Name:&nbsp;</span><input type="text" name="Name" id="Name" style="width: 264px;margin-bottom: 5px;" value="WalaaBrody" pattern="^[a-zA-Z\s]+$"><br>
+        <span style="margin-left: 19px;">Email:&nbsp;</span><input type="email" name="Email" id="Email" maxlength="30" style="width: 264px;margin-bottom: 5px;" value="w.brody@widget-sales.com"><br>
+        <span style="vertical-align: 40px;margin-left: 5px;">Address:&nbsp;</span><textarea name="" id="" cols="30" rows="10" style="overflow-y: scroll;height: 80px;width: 266px;margin-bottom: 1px;">162 Main Road&#13;&#10;Rondebosch&#13;&#10;Cape Town</textarea><br>
+        Postcode:&nbsp;<input type="text" name="" id=""  pattern="[0-9]{6,8}" value="7700" style="width: 165px;">
+        <br>
+        <br>
+        <br>
+    <!-- Second Part Of The Form -->
+        <table border="1">
+            <tr>
+                <th style="text-align: start;">
+                    Product
+                </th>
+                <th style="text-align: start;">
+                    Part Number
+                </th>
+                <th style="text-align: start;">
+                    Quantity
+                </th>
+                <th style="text-align: start;">
+                    Unit Price
+                </th>
+                <th style="text-align: start;">
+                    Subtotal
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    EconoBox
+                </td>
+                <td>
+                    LB100
+                </td>
+                <td>
+                    <input type="text" name="Q1" id="Quantity_1" value="3" pattern="^[0-9]{1,3}$" style="width: 64px;">
+                </td>
+                <td>
+                    R5
+                </td>
+                <td>
+                    <input type="text" name="" id="" value="R15" pattern="^[R][0-9]+$" style="width: 120px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Standard Box
+                </td>
+                <td>
+                    LB200
+                </td>
+                <td>
+                    <input type="text" name="Q1" id="Quantity_2" value="4" pattern="^[0-9]{1,3}$" style="width: 64px;">
+                </td>
+                <td>
+                    R10
+                </td>
+                <td>
+                    <input type="text" name="" id="" value="R40" pattern="^[R][0-9]+$" style="width: 120px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Premium Box/TD&gt;
+                </td>
+                <td>
+                    LB300
+                </td>
+                <td>
+                    <input type="text" name="Q1" id="Quantity_3" value="1" pattern="^[0-9]{1,3}$" style="width: 64px;">
+                </td>
+                <td>
+                    R15
+                </td>
+                <td>
+                    <input type="text" name="" id="" value="R15" pattern="^[R][0-9]+$" style="width: 120px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Deluxe Box/TD&gt;
+                </td>
+                <td>
+                    LB400
+                </td>
+                <td>
+                    <input type="text" name="Q1" id="Quantity_4" value="0" pattern="^[0-9]{1,3}$" style="width: 64px;">
+                </td>
+                <td>
+                    R15
+                </td>
+                <td>
+                    <input type="text" name="" id="" pattern="^[R][0-9]+$" style="width: 120px;">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Super Deluxe Box/TD&gt;
+                </td>
+                <td>
+                    LB500
+                </td>
+                <td>
+                    <input type="text" name="Q1" id="Quantity_5" value="1" pattern="^[0-9]{1,3}$" style="width: 64px;">
+                </td>
+                <td>
+                    R30
+                </td>
+                <td>
+                    <input type="text" name="" id="" value="R30" pattern="^[R][0-9]+$" style="width: 120px;">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="5" style="text-align: end;">Total:&nbsp;<input type="text" name="" id="" value="R100" pattern="^[R][0-9]+$" style="width: 120px;"></td>
+            </tr>
+        </table>
+    <!-- Third Part Of The Form -->
+    <br>
+    <br>
+    <br>
+    <h4 style="display: inline;">Credit Card Details</h4>
+    <table>
+        <tr>
+            <td>
+                <label>Card Type:</label> 
+                <fieldset style="border: 0px;padding-left: 0px;margin-left: 0px;margin-right: 0px;padding-right: 0px;">
+                    <input type="radio" name="card" id="mastercard" style="margin-bottom: 10px;" checked> Mastercard
+                    <br>
+                    <input type="radio" name="card" id="visa" style="margin-bottom: 10px;"> Visa
+                    <br>
+                    <input type="radio" name="card" id="american" style="margin-bottom: 10px;"> American Express
+                    <br>
+                    <input type="radio" name="card" id="diners" style="margin-bottom: 10px;"> Diners Club
+                </fieldset>
+            </td>
+            <td style="vertical-align: top;">
+                <br>
+                Card Number: <input type="text" name="" id="" value="45645" pattern="[0-9]+" style="width: 147px;margin-top: 6px;margin-bottom: 6px;">
+                <br>
+                Expiry Date: <input type="text" name="" id="" value="03/99" pattern="(0[1-9]|1[0-2])\/9[1-9]" style="width: 73px;margin-left: 10px;">
+            </td>
+        </tr>
+    </table>
+    <br>
+    <span style="vertical-align: 40px;margin-left: 5px;"><strong>Delivery Address:</strong>&nbsp;</span><textarea name="" id="" cols="30" rows="10" style="overflow-y: scroll;height: 80px;width: 232px;margin-bottom: 1px;">162 Main Road&#13;&#10;Rondebosch&#13;&#10;Cape Town</textarea><br>
+    <br>
+    <br>
+    <input type="submit" value="Send order" style="width: 90px;">&nbsp;
+    <input type="reset" value="Clear form" style="width: 90px;">
+    </form>
+</body>
+</html>
